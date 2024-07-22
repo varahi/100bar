@@ -1,0 +1,9 @@
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/templates/Resources/Private/Typoscript/config.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/templates/Resources/Private/Typoscript/breadcrumb.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/templates/Resources/Private/Typoscript/libs.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/templates/Resources/Private/Typoscript/navigation.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/templates/Resources/Private/Typoscript/gridelements.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/templates/Resources/Private/Typoscript/pageHead.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/templates/Resources/Private/Typoscript/pageTS.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/templates/Resources/Private/Typoscript/tt_content.ts">
+<INCLUDE_TYPOSCRIPT: source="FILE: fileadmin/templates/Resources/Private/Typoscript/tx_news.ts">

@@ -1,0 +1,43 @@
+.carousel {
+	margin: 30px 0 40px 0;
+	/*border: 1px solid red;
+	width: auto;
+  overflow: hidden;*/
+}
+.carousel-controls {  
+	z-index: 999;
+}
+.carousel-controls a#prev {
+	position: absolute;	
+	display: block;
+  background: #fff url("../Images/prev.png") no-repeat 0 0;
+	width: 12px;
+	height: 40px;	  
+}
+.carousel-controls a#prev:HOVER {
+  background: #fff url("../Images/prev-hover.png") no-repeat 0 0;	
+}
+.carousel-controls a#next {
+	width: 12px;
+	height: 40px;	  
+  display: block;
+  float: right;
+  position: relative;
+  background: #fff url("../Images/next.png") no-repeat 0 0;
+}
+.carousel-controls a#next:HOVER {
+  background: #fff url("../Images/next-hover.png") no-repeat 0 0;	
+}
+
+#c63 {
+}
+.slideshow {
+	z-index: 1;
+  width: 97%;
+  max-width: 1110px;
+	margin-left: 15px;
+}
+.carousel-item {
+  width: auto;
+  margin-left: 25px;
+}

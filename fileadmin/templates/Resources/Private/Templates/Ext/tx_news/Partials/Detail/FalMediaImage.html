@@ -1,0 +1,23 @@
+{namespace n=GeorgRinger\News\ViewHelpers}
+
+<div class="mediaelement mediaelement-image">
+  <f:if condition="{settings.detail.media.image.lightbox}">
+    <f:then>
+    <div class="news-detail-img view view-gallery third-effect csc-textpic-imagewrap">
+      <a class="magnificpopup" title="{mediaElement.caption}" 
+      href="{f:uri.image(src:'{mediaElement.uid}' treatIdAsReference:1 width:'800')}">  
+        <f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{settings.detail.media.image.width}" height="{settings.detail.media.image.height}" />
+        <div class="mask"></div> 
+      </a>
+    </div>
+    </f:then>
+    <f:else>
+      <f:image src="{mediaElement.uid}" treatIdAsReference="1" title="{mediaElement.originalResource.title}" alt="{mediaElement.originalResource.alternative}" width="{settings.detail.media.image.width}" height="{settings.detail.media.image.height}" />
+    </f:else>
+  </f:if>
+</div>
+<f:if condition="{mediaElement.originalResource.description}">
+  <p class="news-img-caption">
+    {mediaElement.originalResource.description}
+  </p>
+</f:if>

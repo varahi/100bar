@@ -1,0 +1,9 @@
+<f:render partial="Header" /> 
+	<div class="content">
+	 <div class="container">
+		<f:cObject typoscriptObjectPath="lib.breadcrumb" />
+		{content -> f:format.raw()}
+		<f:cObject typoscriptObjectPath="lib.categoryMenu" />
+	 </div> 
+	</div>
+<f:render partial="Footer" />

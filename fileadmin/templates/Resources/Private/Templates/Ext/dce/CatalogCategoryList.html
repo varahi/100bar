@@ -1,0 +1,44 @@
+{namespace dce=ArminVieweg\Dce\ViewHelpers}
+<f:layout name="Default" />
+
+<f:section name="main">
+
+<div class="second-category-list"> 
+	<div class="row second-category-item"> 
+		<div class="col-md-3 col-sm-4 category-list-img"> 
+
+<f:link.page pageUid="{field.link}">				
+<f:for each="{dce:fal(field:'image', contentObject:contentObject)}" as="fileReference" iteration="iterator">
+    <f:if condition="{iterator.isFirst}">
+        <f:image src="{fileReference.uid}" alt="" treatIdAsReference="1" width="215c" height="215c" />
+    </f:if>
+</f:for>				
+</f:link.page>
+				
+			
+		</div>
+								 
+	<div class="col-md-9 col-sm-8 category-list-description"> 
+		<f:if condition="{field.title}">
+			<a href="produkcija/gidronansosy/shesterennye/"> 
+				<h3>{field.title}</h3>
+			</a> 
+		</f:if>
+		<f:if condition="{field.brand}">
+			<span>{field.brand}</span>  
+		</f:if>
+		<f:if condition="{field.description}">
+			<f:format.html>{field.description}</f:format.html>
+		</f:if>							 
+		<f:if condition="{field.link}">
+			<div class="more"> 
+				<f:link.page pageUid="{field.link}">	 Подробнее </f:link.page>
+			</div>
+		</f:if>
+	</div>
+	</div>
+</div>
+
+</f:section>
+
+
