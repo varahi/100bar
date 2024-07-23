@@ -26,10 +26,11 @@ config {
 # Extbase exceptions
 config.contentObjectExceptionHandler = 0
 
+#Devcompany http://www.devcompany.ru/
+#info@devcompany.ru
+
 page.config.headerComment (
-  Devcompany http://www.devcompany.ru/
-  info@devcompany.ru
-  Dmitry Vasiliev dmitry@typo3.ru.net
+  Dmitry Vasilev dmitry@t3dev.ru
   ___________________________________
 )
 
@@ -91,4 +92,11 @@ page.10.file.stdWrap.cObject {
   # Inner page
   2 = TEXT
   2.value  = {$template_path}/Resources/Private/Templates/Page/Inner.html                        
+}
+
+# Favicons
+page.headerData.2039 = FLUIDTEMPLATE
+page.headerData.2039 {
+  file = fileadmin/templates/Resources/Private/Partials/Favicons.html
+  #extbase.controllerExtensionName = tmpl
 }
